@@ -1,29 +1,129 @@
-@font-face {
-    font-family: 'GmarketSans';
-    font-weight: 500;
-    font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf') format("truetype");
-    font-display: swap;
-} 
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-jp-dynamic-subset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Noto+Serif+KR:wght@200..900&display=swap');
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
-    font-family: 'Pretendard Variable', 'Pretendard JP Variable', 'Pretendard', 'Pretendard JP';
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
+} 
 body,html {
     padding:0px;
     margin:0px;
-    font-family: 'GmarketSans', cursive;
+    font-family: 'NanumSquareRound', "Pretendard Variable";
     font-weight:bold;
     color:#fff;
     background:rgb(0, 0, 0);
     scroll-behavior: smooth;
+}
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    align-items: auto;
+    flex-direction: column;
+    color:#ffffff;
+    font-family: 'NanumSquareRound', "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 750;
+    font-size:20px;
+    transition:0.4s ease-in-out;
+    text-align:center;
+    border-radius: 8px;
+    top:12px;
+    height: auto;
+    width: auto;
+    left:8px;
+    right:8px;
+    text-decoration:none;
+    padding-bottom:4px;
+}
+.navinfo{
+    margin-left:32px;
+    margin-top:4px;
+    display:flex;
+    flex-direction: row;
+}
+.navinfo t2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left:12px;
+    color:inherit;
+    text-decoration:none;
+    transition:0.4s ease-in-out;
+    padding:5px 8px;
+    font-size:16px;
+    border-bottom:2px solid transparent;
+}
+.navinfo t9{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #cafebe;
+}
+.navinfo t2 a:hover{
+    border-bottom:2px solid #fff;
+}
+.navinfo t1 {
+    margin-right:12px;
+    color:inherit;
+    text-decoration:none;
+    transition:0.4s ease-in-out;
+    padding:5px 8px;
+    border-bottom:2px solid transparent;
+    text-decoration:none;
+    font-size:20px;
+    opacity:100%;
+    color:#ffffff;
+}
+.socbtn {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    left:16px;
+    right:16px;
+    width:100%;
+    margin-right:32px;
+    color:inherit;
+    transition:0.4s ease-in-out;
+    opacity:100%;
+    color:#ffffff;
+}
+.socbtn a {
+    color:inherit;
+    transition:0.4s ease-in-out;
+    opacity:100%;
+    color:#ffffff;
+    margin-left:4px;
+}
+.navtitle {
+    letter-spacing: 0.2em;
+    padding-left:32px;
+    color:#ffffff;
+}
+#navb1 {
+    display: flex;
+    justify-content: left;
+    align-items: auto;
+    margin-top: 8px;
+    margin-left: 32px;
+    margin-right: 32px;
+    height:2px;
+    size:2px;
+    border:0px;
+    border-radius: 2px;
+    background-color:#cafebe;
+    opacity:50%;
+}
+.frame1 {
+    flex-direction: row;
+}
+.nbuttons {
+    display: flex;
+    justify-content: right;
+    align-items: right;
 }
 #loading {
     width: 100vw;
@@ -50,51 +150,17 @@ body,html {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
-#header {
-    font-family: 'GmarketSans';
-    width:80%;
-    padding:4% 10%;
-    text-align:center;
-    position:absolute;
-    transition:0.6s ease-in-out;
-}
-#header div {
-    font-family: 'GmarketSans';
-    display:block;
-}
-#title {
-    font-family: 'GmarketSans';
-    font-size:40px;
-    background-image: linear-gradient(to left, #FFEEFF 0%, #FFCCFF 100%);
-    -webkit-background-clip:text;
-    background-clip:text;
-    -webkit-text-fill-color: transparent;
-    background-size:500% 500% !important;
-    -webkit-animation: Gradient 20s ease infinite;
-    -moz-animation: Gradient 20s ease infinite;
-    -o-animation: Gradient 20s ease infinite;
-    animation: Gradient 20s ease infinite;
-}
-#links {
-    margin:40px 0px;
-    transition:0.6s ease-in-out;
-    color:#fff;
-}
-#links a {
-    margin:0px 30px;
+a, a:link, a:visited, a:focus {
     color:inherit;
+    font-weight: 400;
     text-decoration:none;
     transition:0.4s ease-in-out;
-    padding:5px 8px;
     border-bottom:2px solid transparent;
-}
-#links a:hover {
-    border-bottom:2px solid #fff;
 }
 #middle {
     width:100%;
     height:80vh;
-    background:linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0)),url('./assets/background.png') center center fixed;
+    background:linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0)),url('./assets/static.png') center center fixed;
     background-size:100% auto;
     background-repeat:no-repeat;
     color:white;
@@ -111,20 +177,40 @@ body,html {
     margin: 0 auto;
     text-align: center;
 }
+#tagline k{
+    font-family: "Noto Serif JP","Noto Serif KR", "Pretendard JP Variable";
+    font-size:50px;
+}
+#tagline k1{
+    font-family: "Noto Serif JP","Noto Serif KR", "Pretendard JP Variable";
+    font-size:70px;
+    color:#D94925;
+}
+#tagline k2{
+    font-family: "Pretendard Variable";
+    font-weight:600;
+    font-size:36px;
+}
+#tagline k5{
+    font-family:'NanumSquareRound', "Pretendard Variable";
+    font-weight: 300;
+    font-size:16px;
+}
 #portfolio {
     display:flex;
     justify-content:center;
     flex-direction:column;
     margin: 0 auto;
-    font-family: 'GmarketSans';
+    font-family: 'NanumSquareRound', "Pretendard Variable";
     width:80%;
     padding:2% 10%;
 }
 #portfolio div h1 {
     margin: 0 auto;
-    font-family: 'GmarketSans';
+    font-family: 'NanumSquareRound', "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size:40px;
-    background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
+    font-weight:800;
+    background-image: linear-gradient(to left, #A1FFB6 0%, #CAFEBE 100%);
     -webkit-background-clip:text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
@@ -133,7 +219,30 @@ body,html {
     -moz-animation: Gradient 20s ease infinite;
     -o-animation: Gradient 20s ease infinite;
     animation: Gradient 20s ease infinite;
-    font-family: 'Comfortaa', cursive;
+}
+#event {
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    margin: 10px 10px 130px 10px;
+    font-family: 'NanumSquareRound', "Pretendard Variable";
+    font-size:24px;
+}
+#event k3{
+    font-size:16px;
+}
+#info {
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    margin: 10px 10px 130px 10px;
+    font-family: 'NanumSquareRound', "Pretendard Variable";
+    font-size:24px;
+}
+#info k3{
+    font-size:16px;
 }
 #socials {
     text-align: center;
@@ -141,7 +250,7 @@ body,html {
     justify-content:center;
     flex-direction:column;
     margin: 10px 10px 130px 10px;
-    font-family: 'GmarketSans';
+    font-family: 'NanumSquareRound';
 }
 #downloads {
     text-align: center;
@@ -149,7 +258,7 @@ body,html {
     justify-content:center;
     flex-direction:column;
     margin: 10px 10px 130px 10px;
-    font-family: 'GmarketSans';
+    font-family: 'NanumSquareRound';
 }
 #btnset {
     margin: 10px 10px 80px 10px;
@@ -157,14 +266,20 @@ body,html {
 #btnset1 {
     margin: 50px 10px 0px 10px;
 }
+#btnset1 k4{
+    font-size: 20px;
+    font-weight: 700;
+}
 #contact {
+    font-size:24px;
     text-align: center;
     display:flex;
     justify-content:center;
     flex-direction:column;
     line-height: 3;
     margin: 10px 10px 130px 10px;
-    font-family: 'GmarketSans';
+    font-family: 'NanumSquareRound', 'Pretendard Variable', 'Pretendard JP Variable', 'Pretendard', 'Pretendard JP';
+    font-weight: 700;
 }
 #discord {
     text-align: center;
@@ -173,47 +288,11 @@ body,html {
     flex-direction:column;
     position: 50% 0;
     margin: 10px 10px 80px 10px;
-    font-family: 'GmarketSans';
+    font-family: 'Pretendard Variable', 'Pretendard JP Variable', 'Pretendard', 'Pretendard JP';
+    font-weight: 400;
 }
 #widget1 {
     margin-top: 50px;
-}
-#contact form {
-    width:100%;
-}
-#contact form input {
-    width:46%;
-    margin:20px 1%;
-    background:transparent;
-    border:0px;
-    border-bottom:2px solid rgba(255,255,255,0.5);
-    padding:8px 10px;
-    font-family: 'Comfortaa', cursive;
-    font-size:18px;
-    transition:0.4s ease-in-out;
-    color:#fff;
-}
-#contact form textarea {
-    width:96%;
-    margin:20px 1%;
-    padding:8px 10px;
-    border:0px;
-    border-bottom:2px solid rgba(255,255,255,0.5);
-    padding:8px 10px;
-    font-family: 'Comfortaa', cursive;
-    font-size:18px;
-    background:transparent;
-    resize:none;
-    transition:0.4s ease-in-out;
-    color:#fff;
-}
-#contact form input:focus {
-    outline:none;
-    border-bottom:2px solid rgba(255,255,255,1);
-}
-#contact form textarea:focus {
-    outline:none;
-    border-bottom:2px solid rgba(255,255,255,1);
 }
 ::placeholder {
     color:#fff;
@@ -224,7 +303,7 @@ body,html {
     border-radius:50px;
     border:2px solid #fff;
     font-size:18px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'NanumSquareRound', 'Pretendard Variable', 'Pretendard JP Variable', 'Pretendard', 'Pretendard JP';
     font-weight:bold;
     background:transparent;
     transition:0.4s ease-in-out;
@@ -241,7 +320,7 @@ body,html {
     border-radius:50px;
     border:2px solid #fff;
     font-size:18px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'NanumSquareRound', 'Pretendard Variable', 'Pretendard JP Variable', 'Pretendard', 'Pretendard JP';
     font-weight: bolder;
     background:transparent;
     transition:0.4s ease-in-out;
@@ -262,7 +341,7 @@ body,html {
     border-radius:50px;
     border:2px solid #fff;
     font-size:18px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'NanumSquareRound', 'Pretendard Variable', 'Pretendard JP Variable', 'Pretendard', 'Pretendard JP';
     font-weight:bold;
     background:#fff;
     transition:0.4s ease-in-out;
@@ -351,8 +430,9 @@ body,html {
     -moz-animation: Gradient 20s ease infinite;
     -o-animation: Gradient 20s ease infinite;
     animation: Gradient 20s ease infinite;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'NanumSquareRound', "Pretendard Variable";
     text-decoration:none;
+    font-weight:700;
 }
 button:focus {
     outline:none;
