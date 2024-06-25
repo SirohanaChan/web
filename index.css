@@ -369,53 +369,6 @@ a, a:link, a:visited, a:focus {
     background:#fff;
     cursor:pointer;
 }
-@media (max-width: 720px){
-    #header {
-        width:94%;
-        padding:15% 3%;
-    }
-    #tagline k {
-        font-size:30px;
-    }
-    #tagline k1 {
-        font-size:44px;
-    }
-    .navinfo t2 {
-        display: none;
-    }
-    #navinfo t3 {
-        font-size:24px;
-    }
-    #middle {
-        width:100%;
-        border-radius:0px;
-        height:80vh;
-        background-size:cover;
-    }
-    #tagline {
-        width:90%;
-        font-size:30px;
-    }
-    .btn_one {
-        font-size:14px;
-        padding:8px 20px;
-    }
-    .btn_two {
-        font-size:14px;
-        padding:8px 20px;
-    }
-    #contact form input {
-        width:92%;
-    }
-    #contact form textarea {
-        width:92%;
-    }
-    .btn_social {
-        font-size:14px;
-        margin:10px;
-        padding:10px 11px;
-    }
-}
 #footer {
     width:100%;
     padding:10vh 0px;
