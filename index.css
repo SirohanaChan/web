@@ -369,7 +369,7 @@ a, a:link, a:visited, a:focus {
     background:#fff;
     cursor:pointer;
 }
-@media (max-width: 900px){
+@media (max-width: 720px){
     #header {
         width:94%;
         padding:15% 3%;
@@ -382,6 +382,9 @@ a, a:link, a:visited, a:focus {
     }
     #navinfo t2 {
         display: none;
+    }
+    #navinfo t3 {
+        font-size:24px;
     }
     #middle {
         width:100%;
