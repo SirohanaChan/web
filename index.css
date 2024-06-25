@@ -380,7 +380,7 @@ a, a:link, a:visited, a:focus {
     #tagline k1 {
         font-size:44px;
     }
-    #navinfo t2 {
+    .navinfo t2 {
         display: none;
     }
     #navinfo t3 {
