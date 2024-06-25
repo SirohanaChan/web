@@ -374,14 +374,14 @@ a, a:link, a:visited, a:focus {
         width:94%;
         padding:15% 3%;
     }
-    #title {
+    #tagline k {
         font-size:30px;
     }
-    #links {
-        margin:30px 0px;
+    #tagline k1 {
+        font-size:44px;
     }
-    #links a {
-        margin:0px;
+    #navinfo t2 {
+        display: none;
     }
     #middle {
         width:100%;
