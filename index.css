@@ -76,7 +76,11 @@ body,html {
     text-decoration:none;
     font-size:20px;
     opacity:100%;
+    font-weight:800;
     color:#ffffff;
+}
+#btnk t3 {
+    display:none;
 }
 .socbtn {
     display: flex;
@@ -158,7 +162,6 @@ a, a:link, a:visited, a:focus {
     border-bottom:2px solid transparent;
 }
 #middle {
-    width:100%;
     height:80vh;
     background:linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0)),url('./assets/static.png') center center fixed;
     background-size:100% auto;
@@ -169,6 +172,7 @@ a, a:link, a:visited, a:focus {
     flex-direction:column;
     transition:1s ease-in-out;
     padding-top:20vh;
+    padding-bottom:40vh;
 }
 #tagline {
     font-family: 'Pretendard Variable', 'Pretendard JP Variable', 'Pretendard', 'Pretendard JP';
@@ -368,6 +372,98 @@ a, a:link, a:visited, a:focus {
     color:#000;
     background:#fff;
     cursor:pointer;
+}
+@media (max-width: 1080px){
+    .navinfo t2 {
+        margin-left:0px;
+        font-size:14px;
+    }
+    #tagline {
+        width:90%;
+        font-size:44px;
+    }
+    #tagline k {
+        width:90%;
+        font-size:44px;
+    }
+    #tagline k1 {
+        width:90%;
+        font-size:55px;
+    }
+    #tagline k2 {
+        font-size:32px;
+    }
+    #tagline k5{
+        font-size:14px;
+    }
+}
+@media (max-width: 720px){
+    .navinfo t2 {
+        display:none;
+    }
+    #middle {
+        width:100%;
+        border-radius:0px;
+        height:80vh;
+        background-size:cover;
+    }
+    #tagline {
+        width:90%;
+        font-size:30px;
+    }
+    #tagline k {
+        width:90%;
+        font-size:36px;
+    }
+    #tagline k1 {
+        width:90%;
+        font-size:44px;
+    }
+    #tagline k2 {
+        font-size:26px;
+    }
+    #tagline k5{
+        font-size:12px;
+    }
+    .btn_one {
+        font-size:14px;
+        padding:8px 20px;
+    }
+    .btn_two {
+        font-size:14px;
+        padding:8px 20px;
+    }
+    .btn_social {
+        font-size:14px;
+        margin:10px;
+        padding:10px 11px;
+    }
+}
+@media (max-width: 480px){
+    .navinfo t2 {
+        display:none;
+    }
+    .socbtn{
+        display:none;
+    }
+    #tagline {
+        width:90%;
+        font-size:24px;
+    }
+    #tagline k {
+        width:90%;
+        font-size:28px;
+    }
+    #tagline k1 {
+        width:90%;
+        font-size:36px;
+    }
+    #tagline k2 {
+        font-size:20px;
+    }
+    #tagline k5{
+        font-size:12px;
+    }
 }
 #footer {
     width:100%;
