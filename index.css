@@ -378,6 +378,9 @@ a, a:link, a:visited, a:focus {
         margin-left:0px;
         font-size:14px;
     }
+    #middle {
+        background-size:cover;
+    }
     #tagline {
         width:90%;
         font-size:44px;
@@ -402,9 +405,6 @@ a, a:link, a:visited, a:focus {
         display:none;
     }
     #middle {
-        width:100%;
-        border-radius:0px;
-        height:80vh;
         background-size:cover;
     }
     #tagline {
@@ -445,6 +445,9 @@ a, a:link, a:visited, a:focus {
     }
     .socbtn{
         display:none;
+    }
+    #middle {
+        background-size:cover;
     }
     #tagline {
         width:90%;
