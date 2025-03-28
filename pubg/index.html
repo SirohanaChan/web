@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { text-align: center; }
+        .image-container {
+            width: 100vw;
+            height: 90vh;
+            overflow: hidden;
+            border: 2px solid #000;
+            margin: auto;
+            position: relative;
+            background-color: #f0f0f0;
+        }
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+            cursor: grab;
+            user-select: none;
+        }
+        .image-list {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-list">
+        <button onclick="loadImage('erangel.png')">에란겔</button>
+        <button onclick="loadImage('miramar.png')">미라마</button>
+        <button onclick="loadImage('taego.png')">태이고</button>
+        <button onclick="loadImage('vikendi.png')">비켄디</button>
+        <button onclick="loadImage('rondo.png')">론도</button>
+        <button onclick="loadImage('deston.png')">데스턴</button>
+    </div>
+    <div class="image-container" id="container">
+        <img id="mapImage" src="" alt="지도">
+    </div>
+    <script>
+        let img = document.getElementById("mapImage");
+        let container = document.getElementById("container");
+        let scale = 1, startX = 0, startY = 0, imgX = 0, imgY = 0;
+        let isDragging = false;
+
+        function loadImage(imageSrc) {
+            img.src = imageSrc;
+            img.style.transform = "translate(-50%, -50%) scale(1)";
+            scale = 1; imgX = 0; imgY = 0;
+        }
+
+        container.addEventListener("wheel", function(event) {
+            event.preventDefault();
+            let newScale = scale + event.deltaY * -0.001;
+            scale = Math.min(Math.max(1, newScale), 3); // 최소 0.8배, 최대 3배
+            updateTransform();
+        });
+
+        img.addEventListener("mousedown", function(event) {
+            isDragging = true;
+            startX = event.clientX - imgX;
+            startY = event.clientY - imgY;
+            img.style.cursor = "grabbing";
+        });
+
+        document.addEventListener("mousemove", function(event) {
+            if (!isDragging) return;
+            imgX = event.clientX - startX;
+            imgY = event.clientY - startY;
+            updateTransform();
+        });
+
+        document.addEventListener("mouseup", function() {
+            isDragging = false;
+            img.style.cursor = "grab";
+        });
+
+        function updateTransform() {
+            img.style.transform = `translate(-50%, -50%) scale(${scale}) translate(${imgX / scale}px, ${imgY / scale}px)`;
+        }
+    </script>
+</body>
+</html>
