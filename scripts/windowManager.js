@@ -90,11 +90,11 @@ function openContact() {
             <div class="selectable">lyslipic1@gmail.com</div>
             <hr>
             <div class="contact-row">
-                ${makeContactIcon('x.svg', 'X<br>(Twitter)', 'https://x.com/lai_fuari')}
-                ${makeContactIcon('discord.svg', 'Discord', 'https://discord.gg/ayDd9WbdgY')}
-                ${makeContactIcon('osu!.svg', 'Osu!', 'https://osu.ppy.sh/users/20654645')}
-                ${makeContactIcon('youtube.svg', 'Youtube', 'https://www.youtube.com/@ixLai')}
-                ${makeContactIcon('spotify.svg', 'Spotify', 'https://open.spotify.com/artist/7fouFbegt4hWQi6dQykm9A?si=9fmqrjYbQWu50Dr6tVx04g')}
+                ${makeContactIcon('x.png', 'X<br>(Twitter)', 'https://x.com/lai_fuari')}
+                ${makeContactIcon('discord.png', 'Discord', 'https://discord.gg/ayDd9WbdgY')}
+                ${makeContactIcon('osu!.png', 'Osu!', 'https://osu.ppy.sh/users/20654645')}
+                ${makeContactIcon('youtube.png', 'Youtube', 'https://www.youtube.com/@ixLai')}
+                ${makeContactIcon('spotify.png', 'Spotify', 'https://open.spotify.com/artist/7fouFbegt4hWQi6dQykm9A?si=9fmqrjYbQWu50Dr6tVx04g')}
             </div>
         </div>
     `);
