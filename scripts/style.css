@@ -1,0 +1,277 @@
+body,html {
+    padding:0px;
+    margin:0px;
+    font-family: "Wanted Sans Variable", "Wanted Sans", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    user-select: none;
+}
+
+/* 분리 */
+.background, .window {
+    position: fixed;
+    min-width: 100%;
+    height: calc(100vh - 48px);
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* 배경 */
+.background {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../assets/background.webp");
+    width: 100vw;
+    z-index: 0;
+}
+.background img{
+    height: 100vh;
+}
+
+/* 바탕화면 */
+.desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    position: relative;
+    height: calc(100vh - 96px);
+    background: none;
+    z-index: 20;
+    padding: 24px 24px;
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    width: 128px;
+    height: fit-content;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    transition: border 0.2s ease, background-color 0.2s ease;
+}
+.icon img {
+    width: 96px;
+    border-radius: 24px;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
+}
+.icon p {
+    margin: 0px;
+    padding: 0px;
+}
+.icon:hover {
+    background: #ffffff33;
+    border: 1px solid #ffffff66;
+    transition: 0.2s ease;
+}
+.icon.active {
+    background: #ffffff88;
+    border: 1px solid #ffffffcc;
+    transition: 0.2s ease;
+}
+
+/* 창 */
+.window-header {
+    display: flex;
+    height: 32px;
+    background-color: #ffffff20;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.window-header button {
+    border: transparent;
+    background: transparent;
+    padding: 8px;
+    margin: 0;
+}
+#headertitle {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #222;
+}
+.app-window {
+    position: absolute;
+    width: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    border: 1px solid #ccc;
+    overflow: hidden;
+    z-index: 100;
+    animation: fadeInScale 0.2s ease-out;
+}
+
+.profile-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    color: #fff;
+    background: url("../assets/background_black.png");
+}
+.profilefull {
+    display: flex;
+    flex-direction: column;
+    width: 534px;
+    padding: 32px;
+    box-shadow: 0 0px 20px rgba(0,0,0,0.5);
+    gap: 32px;
+}
+.top-banner {
+    height: 200px;
+}
+.profileline {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 16px;
+}
+.colorlogo {
+    width: 128px;
+    border-radius: 64px;
+}
+.profilecredit {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 8px;
+}
+.profilecredit h1{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 900;
+}
+.profilecredit h2{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 900;
+}
+.profilecredit h3{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+#flag {
+    display: flex;
+    flex-direction: row;
+    width:fit-content;
+    align-items: center;
+    gap: 8px;
+    background: #ffffff20;
+    padding: 0 8px 0 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.flag {
+    height:20px;
+    flex: 0;
+}
+#cat {
+    flex:1;
+}
+#gameline {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+}
+.gameprofile img {
+    width: 15px;
+    opacity: 0.7;
+}
+.gameprofile g1 {
+    font-size: 20px;
+    font-weight: 900;
+}
+.gameprofile g2 {
+    font-size: 14px;
+    font-weight: 700;
+}
+.gameprofile g3 {
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.7;
+}
+.contact-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    background-color: #22222288;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    gap:8px;
+    font-size: 20px;
+    font-weight: 700;
+    width:fit-content;
+    color: #fff;
+}
+.contact-window hr {
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border: transparent;
+    opacity: 0.7;
+}
+.contact-row {
+    display: flex;
+    flex-direction: row;
+}
+/* 작업표시줄 */
+.taskbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    height: 48px;
+    background:#fff;
+}
+#logo {
+    width: 32px;
+    height: 32px;
+}
+#taskbartext {
+    font-size: 16px;
+    font-weight: 800;
+    color: #222;
+}
+#siteinfo {
+    position: fixed;
+    right: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+}
+
+
+/* 기타 */
+a, a:link, a:visited, a:focus {
+    color:inherit;
+    text-decoration:none;
+}
+.selectable {
+    user-select: text;
+}
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

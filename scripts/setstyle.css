@@ -1,0 +1,119 @@
+body,html {
+    padding:0px;
+    margin:0px;
+    font-family: "Wanted Sans Variable", "Wanted Sans", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    scroll-behavior: smooth;
+    user-select: none;
+    background-color: #111111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1360px;
+    top: 128px;
+    margin: 64px 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 32px;
+}
+
+.username {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.settings {
+    max-width: 100%;
+    margin: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.panel {
+    background-color: #222222;
+    border-radius: 10px;
+    padding: 24px;
+    width: 320px;
+    border: 1px solid #ffffff20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    margin: 0 12px;
+    border-bottom: 1px solid #ffffff20;
+    width: 100%;
+}
+.list p2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.value {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.value p3 {
+    font-size: 12px;
+    font-weight: 400;
+}
+.list p4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.taskbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    height: 48px;
+    background:#fff;
+    bottom: 0px;
+    width: 100%;
+}
+#logo {
+    width: 32px;
+    height: 32px;
+}
+#taskbartext {
+    font-size: 16px;
+    font-weight: 800;
+    color: #222;
+}
+#siteinfo {
+    position: fixed;
+    right: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+    color: #222;
+}
+a, a:link, a:visited, a:focus {
+    color:inherit;
+    text-decoration:none;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Lai。</title>
+    <link rel="stylesheet" href="scripts/style.css">
+    <link rel="stylesheet" href="scripts/popup.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous" />
+    <link rel="preload" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css" />
+    <meta property="og:title" content="Lai。" />
+    <meta property="og:image" content="favicon.ico" />
+    <meta property="og:url" content="https://www.ruarinn.moe/" />
+    <meta property="og:type" content="website" />
+</head>
+<body>
+    <div id="popupNotice"></div>
+    <div class="display">
+        <div class="background"><img src="assets/illust.svg"></div>
+        <div class="desktop">
+            <div class="icon" onclick="openProfile(); setActiveIcon(this);">
+                <img src="assets/profile.svg">
+                <p>Profile</p>
+            </div>
+            <div class="icon" onclick="location.href='/setting.html'">
+                <img src="assets/setting.svg">
+                <p>Lai's<br>Setting</p>
+            </div>
+            <div class="icon" onclick="openContact(); setActiveIcon(this);">
+                <img src="assets/contact.svg">
+                <p>Contact</p>
+            </div>
+        </div>
+        <div class="taskbar">
+            <div id="logo"><a href="\"><img src="assets/logo.svg"></a></div>
+            <div id="taskbartext"><a href="\">Utility</a></div>
+            <div id="taskbartext"><a href="https://www.notion.so/sirohana/L-a-i-Utility-Notes-09c23b33d1b34c76b1e23be4abfe37fe">Music Policy</a></div>
+            <div id="taskbartext"><a href="https://discord.gg/ayDd9WbdgY">Discord</a></div>
+            <div id="siteinfo">2025</br>@Ruarinn</div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/windowManager.js"></script>
+    <script src="scripts/popup.js"></script>
+</body>
+</html>
