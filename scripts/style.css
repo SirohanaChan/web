@@ -230,14 +230,16 @@ body,html {
 }
 /* 작업표시줄 */
 .taskbar {
-    position: relative;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 16px;
     height: 48px;
+    width: 100%;
     background:#fff;
+    bottom: 0px;
 }
 #logo {
     width: 32px;
