@@ -70,8 +70,8 @@ function openProfile() {
                     <div id="cat"><img src="assets/cat.jpg" style="width: 100%; border-radius: 8px; margin-top: 8px;"></div>
                     <div class="gameprofile" style="margin-top: 8px; line-height: 1.6;">
                         <g1>PUBG</g1>
-                        <div id="gameline"><img src="assets/steam.svg"><g2>[BP] Ruarinn-_-</g2></div>
-                        <div id="gameline"><img src="assets/kakao.svg"><g2>BP_Elfaria</g2></div>
+                        <div id="gameline"><img src="assets/steam.svg"><g2>[BP] HVNx_x</g2></div>
+                        <div id="gameline"><img src="assets/kakao.svg"><g2>Myanahi</g2></div>
                         <g1>Genshin Impact</g1>
                         <div id="gameline"><g3>AS</g3><g2>877241340</g2></div>
                         <g1>Osu!</g1>
